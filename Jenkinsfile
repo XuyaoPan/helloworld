@@ -13,7 +13,7 @@ pipeline {
         stage("test step") {
             steps {
                 echo "this is the test step"
-                sh 'python3 hello_world.py $params.Owner $params.Team'
+                sh "python3 hello_world.py $params.Owner $params.Team"
             }
         }
     }
