@@ -5,12 +5,6 @@ pipeline {
     }
     agent any
     stages {
-        stage("check out"){
-            steps {
-                git 'git@github.com:XuyaoPan/helloworld.git'
-            }
-
-        }
         stage("build step") {
             steps {
                 echo "this is the build step"
